@@ -19,6 +19,8 @@ pages = [
     page7, page8, page9, page10, page11, page12
 ]
 
+st.write(len(pages))
+
 
 st.title("Multi-Page Survey App")
 
