@@ -19,16 +19,16 @@ pages = [
     page7, page8, page9, page10, page11, page12
 ]
 
-st.write(len(pages))
-
 
 st.title("Multi-Page Survey App")
 
 current_page_index = st.session_state.get("current_page_index", 0)
 current_page = pages[current_page_index]
 
-
-user_responses.update(current_page())
+try:
+    user_responses.update(current_page())
+except:
+    pass
 
 col1, col2, col3 = st.columns([1, 6, 1])
 
